@@ -107,13 +107,12 @@ int main(void)
 				k--;
 		}
         fprintf(f3, "%s ", entry->d_name);
-		fprintf(f3, "%d ", i);
 		for (j = 1; j <= count_problems; j++)
 		{
             FILE *f1 = fopen("test/info.txt", "r");
             tch1 = '^';
 			fscanf(f1, "%d\n", &num);
-            for (k = 1; k <= j + 1; k++)
+            for (k = 1; k <= j; k++)
             	fscanf(f1, "%d %d\n", &num, &count_problem_tests);
 			char name_of_user[10];
 			sprintf(name_of_user, "%s", entry -> d_name);
